@@ -5,14 +5,14 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(name='multibarplot',
       version='0.1',
-      description='Helper function to plot multiple barplots using Matplotlib',
+      description='Simple function to produce grouped barplots using Matplotlib',
       long_description=long_description,
       long_description_content_type='text/markdown',
-      keywords=['machine learning', 'plotting', 'visualization', 'matplotlib'],
+      keywords=['machine learning', 'visualization', 'matplotlib'],
       author='Matthias Jakobs',
       author_email='matthias.jakobs@tu-dortmund.de',
       url='https://github.com/MatthiasJakobs/multibarplot',
-      license='GNU GPLv3',
-      package_dir={"": "src"},
+      license='MIT',
       packages=setuptools.find_packages(),
-      python_requires='>=3.5',)
+      python_requires='>=3.5',
+      install_requires=['matplotlib', 'numpy'])
