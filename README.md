@@ -23,6 +23,8 @@ fig.legend()
 plt.show()
 ```
 
+![](example.png)
+
 ## Optional parameters
 `x_positions`: Set x ticks to put the barplots at. By default, it will start at index `0`.
 
@@ -32,4 +34,3 @@ plt.show()
 
 `labels`: Optional label for each bar.
 
-![](example.png)
