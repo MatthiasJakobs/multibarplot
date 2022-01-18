@@ -23,7 +23,7 @@ fig.legend()
 plt.show()
 ```
 
-## Parameters
+## Optional parameters
 `x_positions`: Set x ticks to put the barplots at. By default, it will start at index `0`.
 
 `padding`: Padding between each set of bars. By default, this is set to `0.1`.
