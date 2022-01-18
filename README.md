@@ -28,7 +28,7 @@ plt.show()
 
 `padding`: Padding between each set of bars. By default, this is set to `0.1`.
 
-`colors`: Colors of bar plots. By default, it will pick Matplotlibs default colors
+`colors`: Colors of bar plots. By default, it will pick Matplotlibs default colors.
 
 `labels`: Optional label for each bar.
 
