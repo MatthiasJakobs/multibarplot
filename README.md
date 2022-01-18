@@ -5,6 +5,11 @@ Simple function to plot multiple barplots in the same figure. Supports padding a
 Exposes the function `grouped_barplot`.
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+from multibarplot import grouped_barplot 
+
 x = np.arange(3)
 desired_padding = 0.1
 ys = np.array([[0.1, 0.2, 0.3], [0.5, 0.25, 0.4], [0.1, 0.2, 0.3]])
