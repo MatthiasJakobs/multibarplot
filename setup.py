@@ -15,4 +15,4 @@ setuptools.setup(name='multibarplot',
       license='MIT',
       packages=setuptools.find_packages(),
       python_requires='>=3.5',
-      install_requires=['matplotlib', 'numpy'])
+      install_requires=['numpy'])
