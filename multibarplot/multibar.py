@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 def calculate_bar_width(nr_bars, desired_padding):
     space_after_padding = 1 - 2 * desired_padding
@@ -18,9 +17,15 @@ def calculate_x_positions(nr_bars, width):
     else:
         return np.concatenate([np.flip(-one_side), one_side])
 
-def grouped_barplot(ax, X, ys, padding, colors, labels=None):
+def grouped_barplot(ax, ys, x_positions=None, padding=0.1, colors=None, labels=None):
+    nr_ticks, bars_per_tick = ys.shape
+    if x_positions is None:
+        x_positions = np.arange(nr_ticks)
+    if colors is None:
+        colors = [f"C{i}" for i in range(bars_per_tick)]
+
     used_labels = set()
-    for x, y in zip(X, ys):
+    for x, y in zip(x_positions, ys):
         nr_bars = len(y)
         width = calculate_bar_width(nr_bars, padding)
         xs = calculate_x_positions(nr_bars, width) + x
